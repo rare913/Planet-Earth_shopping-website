@@ -1,0 +1,471 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Quicksand", sans-serif;
+}
+
+::selection {
+  background-color: #219426;
+  color: #000000;
+}
+
+::-webkit-selection {
+  background-color: #219426;
+  color: #000000;
+}
+
+nav {
+  padding: 10px 0;
+}
+
+@media (min-width: 992px) {
+  nav {
+      height: 80px;
+  }
+}
+
+.navbar-brand {
+  font-size: 30px;
+}
+
+.navbar-nav .nav-link {
+  font-size: 18px;
+  margin-left: 20px;
+  transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #28b62f;
+}
+
+.icon {
+  font-size: 20px;
+  color: #333;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.icon:hover {
+  color: #28b62f;
+  transform: scale(1.2);
+}
+
+@media (max-width: 991px) {
+  .navbar-nav .nav-link {
+      margin-left: 0;
+      margin-bottom: 10px;
+      text-align: center;
+  }
+}
+
+.hero {
+  width: 100%;
+  height: 700px;
+  background-image: url(./view-natural-mountain-formation-with-dreamy-aesthetic.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.hero-section h1 {
+  color: white;
+  font-size: 70px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.hero-section p {
+  font-size: 40px;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.hero-section button {
+  text-transform: uppercase;
+  width: 150px;
+  height: 45px;
+  border: none;
+  background-color: #28b62f;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.hero-section button:hover {
+  background-color: #219426;
+}
+
+@media (max-width: 1200px) {
+  .hero-section h1 {
+      font-size: 60px;
+  }
+  .hero-section p {
+      font-size: 35px;
+  }
+}
+
+@media (max-width: 991px) {
+  .hero{
+    height: 500px;
+  }
+  .hero-section {
+      height: 450px;
+  }
+  .hero-section h1 {
+      font-size: 50px;
+  }
+  .hero-section p {
+      font-size: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+      height: 400px;
+  }
+  .hero-section h1 {
+      font-size: 40px;
+  }
+  .hero-section p {
+      font-size: 25px;
+  }
+  .hero-section button {
+      width: 120px;
+      height: 35px;
+      font-size: 16px;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero {
+      height: 300px;
+  }
+  .hero-section h1 {
+      font-size: 35px;
+  }
+  .hero-section p {
+      font-size: 20px;
+  }
+  .hero-section button {
+      width: 100px;
+      height: 30px;
+      font-size: 14px;
+  }
+}
+
+.product img {
+  width: 100%;
+}
+
+.product {
+  margin-top: 8%;
+  margin-bottom: 5%;
+}
+
+.product .col {
+  margin-bottom: 5%;
+}
+
+.product h5 {
+  padding-top: 10px;
+  color: gray;
+}
+
+.product h2 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.testimonials {
+  margin-top: 5%;
+}
+
+.testimonials h3 {
+  display: inline;
+}
+
+.testimonials img {
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.testimonials h2 {
+  font-size: 2.5rem;
+  color: #0a2c0c;
+  font-weight: 700;
+}
+
+.testimonial-card {
+  padding: 20px;
+}
+
+.quote-icon {
+  font-size: 1.5rem;
+  color: #28b62f;
+}
+
+.testimonial-card p {
+  font-size: 1rem;
+  color: #333;
+  margin: 20px 0;
+}
+
+.testimonial-avatar {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  margin: 10px auto;
+  border: 2px solid #28b62f;
+}
+
+.testimonial-card h3 {
+  font-size: 1.2rem;
+  color: #0a2c0c;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .testimonials h2 {
+    font-size: 2rem;
+  }
+
+  .testimonial-card p {
+    font-size: 0.9rem;
+  }
+
+  .testimonial-avatar {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+@media (max-width: 576px) {
+  .testimonials h2 {
+    font-size: 1.8rem;
+  }
+
+  .testimonial-card p {
+    font-size: 0.85rem;
+  }
+}
+
+.postcard {
+  width: 100%;
+  height: 400px;
+  background-image: url(./view-mountain-with-dreamy-aesthetic.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 5%;
+}
+
+.postcard h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.postcard p {
+  font-size: 1.25rem;
+  margin-bottom: 20px;
+}
+
+.postcard button {
+  width: 230px;
+  height: 55px;
+  border: none;
+  background-color: #28b62f;
+  color: white;
+  font-size: 1rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.postcard button:hover {
+  background-color: #219426;
+}
+
+@media (max-width: 992px) {
+  .postcard h1 {
+    font-size: 3rem;
+  }
+  .postcard p {
+    font-size: 1.1rem;
+  }
+  .postcard button {
+    width: 200px;
+    height: 50px;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .postcard {
+    height: 300px;
+  }
+  .postcard h1 {
+    font-size: 2.5rem;
+  }
+  .postcard p {
+    font-size: 1rem;
+  }
+  .postcard button {
+    width: 180px;
+    height: 45px;
+  }
+}
+
+@media (max-width: 576px) {
+  .postcard {
+    height: 250px;
+    padding: 15px;
+  }
+  .postcard h1 {
+    font-size: 2rem;
+  }
+  .postcard p {
+    font-size: 0.9rem;
+  }
+  .postcard button {
+    width: 160px;
+    height: 40px;
+    font-size: 0.85rem;
+  }
+}
+
+.why-us {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.why-us .why-item {
+  padding: 20px;
+}
+
+.why-us i {
+  font-size: 2.5rem;
+  color: #4CAF50;
+  margin-bottom: 10px;
+}
+
+.why-us h2 {
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.why-us p {
+  font-size: 1rem;
+  color: #666;
+}
+
+@media (max-width: 768px) {
+  .why-us .why-item {
+    margin-bottom: 20px;
+  }
+  
+  .why-us h2 {
+    font-size: 1.3rem;
+  }
+  
+  .why-us p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .why-us i {
+    font-size: 2rem;
+  }
+  
+  .why-us h2 {
+    font-size: 1.2rem;
+  }
+  
+  .why-us p {
+    font-size: 0.85rem;
+  }
+}
+
+.footer {
+  padding: 20px 10px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.footer a {
+  text-decoration: none;
+  color: #333;
+  margin-right: 15px;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.footer a:hover {
+  color: #28b62f;
+}
+
+.footer-logo h1 {
+  font-size: 1.5rem;
+  margin: 10px 0;
+}
+
+.footer p {
+  font-size: 0.9rem;
+  color: #666;
+  margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+  .footer a {
+    font-size: 0.9rem;
+    margin-right: 10px;
+  }
+
+  .footer-logo h1 {
+    font-size: 1.3rem;
+    padding-top: 30px;
+  }
+
+  .footer p {
+    font-size: 0.8rem;
+    padding-top: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .footer-links, .footer-logo, .footer-copyright {
+    text-align: center;
+    margin-bottom: 15px;
+  }
+
+  .footer a {
+    display: block;
+    margin: 5px 0;
+  }
+
+  .footer-logo h1 {
+    font-size: 1.2rem;
+  }
+
+  .footer p {
+    font-size: 0.75rem;
+  }
+}

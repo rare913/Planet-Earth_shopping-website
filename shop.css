@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Quicksand", sans-serif;
+}
+
+::selection {
+    background-color: #219426;
+    color: #000000;
+}
+
+::-webkit-selection {
+    background-color: #219426;
+    color: #000000;
+}
+
+nav {
+    padding: 10px 0;
+}
+
+.navbar-brand {
+    font-size: 30px;
+}
+
+.navbar-nav .nav-link {
+    font-size: 18px;
+    margin-left: 20px;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #28b62f;
+}
+
+.icon {
+    font-size: 20px;
+    color: #333;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.icon:hover {
+    color: #28b62f;
+    transform: scale(1.2);
+}
+
+.shop-section {
+    padding: 20px 0;
+}
+
+.card {
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    margin-top: 50px;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.footer {
+    padding: 20px 10px;
+    text-align: center;
+}
+
+.footer a {
+    text-decoration: none;
+    color: #333;
+    margin-right: 15px;
+    transition: color 0.3s ease;
+}
+
+.footer a:hover {
+    color: #28b62f;
+}
+
+.footer-logo h1 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+}

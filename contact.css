@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Quicksand", sans-serif;
+}
+
+::selection {
+    background-color: #219426;
+    color: #000000;
+}
+
+::-webkit-selection {
+    background-color: #219426;
+    color: #000000;
+}
+
+nav {
+    padding: 10px 0;
+}
+
+@media (min-width: 992px) {
+    nav {
+        height: 80px;
+    }
+}
+
+.navbar-brand {
+    font-size: 30px;
+}
+
+.navbar-nav .nav-link {
+    font-size: 18px;
+    margin-left: 20px;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #28b62f;
+}
+
+.icon {
+    font-size: 20px;
+    color: #333;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.icon:hover {
+    color: #28b62f;
+    transform: scale(1.2);
+}
+
+@media (max-width: 991px) {
+    .navbar-nav .nav-link {
+        margin-left: 0;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+}
+
+.contact-us {
+    width: 100%;
+    height: 500px;
+    background-image: url(./view-natural-mountain-formation-with-dreamy-aesthetic.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    color: #fff;
+}
+
+.contact-us h1 {
+    font-size: 70px;
+    font-weight: 700;
+    margin: 0;
+}
+
+@media (max-width: 1200px) {
+    .contact-us {
+        height: 450px;
+    }
+
+    .contact-us h1 {
+        font-size: 60px;
+    }
+}
+
+@media (max-width: 992px) {
+    .contact-us {
+        height: 400px;
+    }
+
+    .contact-us h1 {
+        font-size: 50px;
+    }
+}
+
+@media (max-width: 768px) {
+    .contact-us {
+        height: 350px;
+        padding: 10px;
+    }
+
+    .contact-us h1 {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 576px) {
+    .contact-us {
+        height: 300px;
+    }
+
+    .contact-us h1 {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 400px) {
+    .contact-us {
+        height: 250px;
+    }
+
+    .contact-us h1 {
+        font-size: 25px;
+    }
+}
+
+.contact-form {
+    width: 100%;
+    max-width: 500px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.contact-form h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.form-group label {
+    font-size: 14px;
+    color: #666;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    outline: none;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #28b62f;
+}
+
+.form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #28b62f;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.form button:hover {
+    background-color: #219426;
+}
+
+.form h1 {
+    padding-bottom: 20px;
+    padding-top: 50px;
+}
+
+.form .right {
+    padding-left: 60px;
+}
+.form .right h2{
+    font-size: 20px;
+    padding-top: 30px;
+}
+
+.form .right p {
+    font-size: 16px;
+}
+
+.form i {
+    padding: 10px;
+    cursor: pointer;
+    color: #219426;
+}
+
+.form .left{
+    padding-left: 70px;
+}
+
+@media screen and (max-width:767px) {
+    .form .left{
+        padding-left: 0px;
+        margin-bottom: 3%;
+    }
+
+
+    .form .right {
+        padding-left: 0px;
+    }
+}
+
+.footer {
+    padding: 20px 10px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.footer a {
+    text-decoration: none;
+    color: #333;
+    margin-right: 15px;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.footer a:hover {
+    color: #28b62f;
+}
+
+.footer-logo h1 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+
+.footer p {
+    font-size: 0.9rem;
+    color: #666;
+    margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+    .footer a {
+        font-size: 0.9rem;
+        margin-right: 10px;
+    }
+
+    .footer-logo h1 {
+        font-size: 1.3rem;
+        padding-top: 30px;
+    }
+
+    .footer p {
+        font-size: 0.8rem;
+        padding-top: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+
+    .footer-links,
+    .footer-logo,
+    .footer-copyright {
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    .footer a {
+        display: block;
+        margin: 5px 0;
+    }
+
+    .footer-logo h1 {
+        font-size: 1.2rem;
+    }
+
+    .footer p {
+        font-size: 0.75rem;
+    }
+}
